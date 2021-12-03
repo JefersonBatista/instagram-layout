@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin: auto 0;
+
+    width: 215px;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+
+    text-align: center;
+}
+
+input:focus {
+    text-align: left;
+}
+
+.top-area {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: white;
+    border-bottom: 1px solid #dbdbdb;
+    width: 100%;
+    height: 54px;
+}
+
+.top-bar {
+    /* If I undo this comment, there will be "fixed" upon "fixed",
+    and the top-bar will be displayed translated to the right
+    position: fixed;
+    top: 0; */
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 935px;
+    height: 54px;
+}
+
+.top-bar ion-icon {
+    font-size: 24px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo .icon {
+    padding-right: 11px;
+    margin-right: 11px;
+
+    border-right: 1px solid #dbdbdb;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 160px;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+
+    width: 935px;
+}
+
+.side-bar {
+    /* Only for Safari compatibility */
+    position: -webkit-sticky;
+
+    position: sticky;
+    top: 54px;
+
+    width: 293px;
+    height: 300px;
+}
+
+.main-suggestion {
+    margin: 50px 0 24px;
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+    width: 100%;
+    height: 70px;
+}
+
+.main-suggestion img {
+    margin-right: 17px;
+
+    width: 56px;
+    height: 56px;
+}
+
+.main-suggestion .user-name p,
+.main-suggestion .user-name span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.main-suggestion .user-name p {
+    font-weight: 500;
+    color: #262626;
+}
+
+.main-suggestion .user-name span {
+    font-weight: 300;
+    color: #8e8e8e;
+}
+
+.suggestions-top {
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggestions-top p,
+.suggestions-top strong {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.suggestions-top p {
+    color: #8e8e8e;
+}
+
+.suggestions-top strong {
+    color: #262626;
+}
+
+.suggestion {
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggestion .user {
+    display: flex;
+}
+
+.suggestion .user img {
+    margin-right: 11px;
+
+    width: 32px;
+    height: 32px;
+}
+
+.suggestion .user .description .name,
+.suggestion .user .description .status {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+}
+
+.suggestion .user .description .name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+}
+
+.suggestion .user .description .status {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8e8e8e;
+}
+
+.suggestion strong {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #139EF2;
+}
+
+.content {
+    width: 614px;
+}
+
+.stories-box {
+    position: relative;
+    margin-top: 34px;
+    margin-bottom: 24px;
+
+    padding-left: 12px;
+    width: 100%;
+    height: 118px;
+    overflow: hidden;
+
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.stories {
+    display: flex;
+    
+    width: fit-content;
+    height: 100%;
+}
+
+.stories > div {
+    position: relative;
+    margin: 18px 2px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 78px;
+}
+
+.stories > div .thumb {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 66px;
+    height: 66px;
+}
+
+.stories > div .thumb .user-img {
+    position: absolute;
+
+    width: 56px;
+    height: 56px;
+}
+
+.stories > div .thumb .background-img {
+    position: absolute;
+
+    width: 66px;
+    height: 66px;
+}
+
+.stories > div p {
+    margin-top: 66px;
+
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #262626;
+}
+
+.stories-button {
+    position: absolute;
+    top: 46px;
+    right: 9px;
+
+    filter: drop-shadow(0px 4px 0 rgba(64, 64, 64, 0.3));
+    color: white;
+    font-size: 26px;
+}
+
+.post {
+    margin-bottom: 60px;
+
+    border: 1px solid #dbdbdb;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.post-top {
+    display: flex;
+    justify-content: space-between;
+
+    height: 61px;
+}
+
+.post-top ion-icon {
+    margin-top: 30px;
+    margin-right: 20px;
+
+    font-size: 16px;
+}
+
+.post .user {
+    display: flex;
+}
+
+.post .user img {
+    margin-top: 15px;
+    margin-left: 17px;
+
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.post .user .name {
+    margin: 21px 15px 19px;
+    display: flex;
+    align-items: center;
+
+    width: 109px;
+    height: 21px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
+}
+
+.post-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    height: 76px;
+}
+
+.post-bottom .left {
+    margin: auto 18px;
+}
+
+.post-bottom .left .actions ion-icon {
+    margin-right: 18px;
+}
+
+.post-bottom .left .info {
+    display: flex;
+    align-items: center;
+}
+
+.post-bottom .left .info img {
+    margin-right: 5px;
+
+    width: 20px;
+    height: 20px;
+}
+
+.post-bottom .left .info p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
+}
+
+.post-bottom .right {
+    margin-top: 14px;
+    margin-right: 19px;
+}
+
+.post-bottom ion-icon {
+    font-size: 24px;
+}
+
+/* Hidden mobile stuff */
+.mobile-top-bar {
+    display: none;
+}
+
+.mobile-navigation {
+    display: none;
+}
