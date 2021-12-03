@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 
-import TopArea from "./TopArea";
+import App from "./App";
 
 const root = document.querySelector(".root");
-ReactDOM.render(<TopArea />, root);
+ReactDOM.render(<App />, root);
