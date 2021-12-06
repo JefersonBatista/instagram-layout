@@ -54,6 +54,9 @@ export default function Sidebar() {
           />
         ))}
       </div>
+
+      <Links />
+      <Copyright />
     </aside>
   );
 }
@@ -83,4 +86,20 @@ function Suggestion({ userName, image, status }) {
       <strong>Seguir</strong>
     </div>
   );
+}
+
+function Links() {
+  return (
+    <div class="links">
+      <a href="#">Sobre</a> • <a href="#">Ajuda</a> •<a href="#">Imprensa</a> •{" "}
+      <a href="#">API</a> •<a href="#">Carreiras</a> •{" "}
+      <a href="#">Privacidade</a> •<a href="#">Termos</a> •{" "}
+      <a href="#">Localizações</a> •<a href="#">Contas mais relevantes</a> •{" "}
+      <a href="#">Hashtags</a> •<a href="#">Idioma</a>
+    </div>
+  );
+}
+
+function Copyright() {
+  return <div class="copyright">© 2021 INSTAGRAM DO FACEBOOK</div>;
 }

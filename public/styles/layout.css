@@ -90,6 +90,21 @@ input:focus {
     height: 300px;
 }
 
+.side-bar .links,
+.side-bar .links a,
+.side-bar .copyright {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #c7c7c7;
+}
+
+.side-bar .links {
+  margin: 33px 0 18px;
+}
+
 .logged-user {
     margin: 50px 0 24px;
     display: flex;
