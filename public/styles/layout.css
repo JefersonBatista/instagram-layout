@@ -352,27 +352,27 @@ input:focus {
     height: 76px;
 }
 
-.post-bottom .left {
+.post-bottom .actions {
     margin: auto 18px;
 }
 
-.post-bottom .left .actions ion-icon {
+.post-bottom .action-icons ion-icon {
     margin-right: 18px;
 }
 
-.post-bottom .left .info {
+.post-bottom .info {
     display: flex;
     align-items: center;
 }
 
-.post-bottom .left .info img {
+.post-bottom .info img {
     margin-right: 5px;
 
     width: 20px;
     height: 20px;
 }
 
-.post-bottom .left .info p {
+.post-bottom .info p {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -381,7 +381,7 @@ input:focus {
     color: black;
 }
 
-.post-bottom .right {
+.post-bottom .bookmark {
     margin-top: 14px;
     margin-right: 19px;
 }

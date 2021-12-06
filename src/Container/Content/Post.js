@@ -31,8 +31,8 @@ function PostTop({ name, photo }) {
 function PostBottom({ mainLikeUser, mainLikePhoto, likesNumber }) {
   return (
     <div className="post-bottom">
-      <div className="left">
-        <div className="actions">
+      <div className="actions">
+        <div className="action-icons">
           <ion-icon name="heart-outline"></ion-icon>
           <ion-icon name="chatbubble-outline"></ion-icon>
           <ion-icon name="paper-plane-outline"></ion-icon>
@@ -45,7 +45,7 @@ function PostBottom({ mainLikeUser, mainLikePhoto, likesNumber }) {
           </p>
         </div>
       </div>
-      <div className="right">
+      <div className="bookmark">
         <ion-icon name="bookmark-outline"></ion-icon>
       </div>
     </div>
