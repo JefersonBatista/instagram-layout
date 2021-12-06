@@ -90,7 +90,7 @@ input:focus {
     height: 300px;
 }
 
-.main-suggestion {
+.logged-user {
     margin: 50px 0 24px;
     display: flex;
     align-items: center;
@@ -100,15 +100,15 @@ input:focus {
     height: 70px;
 }
 
-.main-suggestion img {
+.logged-user img {
     margin-right: 17px;
 
     width: 56px;
     height: 56px;
 }
 
-.main-suggestion .user-name p,
-.main-suggestion .user-name span {
+.logged-user .user-name p,
+.logged-user .user-name span {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 14px;
@@ -117,12 +117,12 @@ input:focus {
     align-items: center;
 }
 
-.main-suggestion .user-name p {
+.logged-user .user-name p {
     font-weight: 500;
     color: #262626;
 }
 
-.main-suggestion .user-name span {
+.logged-user .user-name span {
     font-weight: 300;
     color: #8e8e8e;
 }

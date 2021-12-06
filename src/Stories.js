@@ -1,34 +1,34 @@
 const stories = [
   {
-    userImg: "9gag 1.png",
+    image: "9gag 1.png",
     userName: "9gag",
   },
   {
-    userImg: "meowed 1.png",
+    image: "meowed 1.png",
     userName: "meowed",
   },
   {
-    userImg: "barked 1.png",
+    image: "barked 1.png",
     userName: "barked",
   },
   {
-    userImg: "nathanwpylestrangeplanet 1.png",
+    image: "nathanwpylestrangeplanet 1.png",
     userName: "nathanwpylestrangeplanet",
   },
   {
-    userImg: "wawawiwacomicsa 1.png",
+    image: "wawawiwacomicsa 1.png",
     userName: "wawawiwacomicsa",
   },
   {
-    userImg: "respondeai 1.png",
+    image: "respondeai 1.png",
     userName: "respondeai",
   },
   {
-    userImg: "filomoderna 1.png",
+    image: "filomoderna 1.png",
     userName: "filomoderna",
   },
   {
-    userImg: "memeriagourmet 1.png",
+    image: "memeriagourmet 1.png",
     userName: "memeriagourmet",
   },
 ];
@@ -38,7 +38,7 @@ export default function Stories() {
     <div className="stories-box">
       <div className="stories">
         {stories.map((story) => (
-          <Story userImg={story.userImg} userName={story.userName} />
+          <Story image={story.image} userName={story.userName} />
         ))}
 
         <ion-icon
@@ -50,7 +50,7 @@ export default function Stories() {
   );
 }
 
-function Story({ userImg, userName }) {
+function Story({ image, userName }) {
   return (
     <div>
       <div className="thumb">
@@ -61,7 +61,7 @@ function Story({ userImg, userName }) {
         />
         <img
           className="user-img"
-          src={`images/${userImg}`}
+          src={`images/${image}`}
           alt="Usuário do story"
         />
       </div>
