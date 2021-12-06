@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.root {
+.app {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,11 +38,6 @@ input:focus {
 }
 
 .top-bar {
-    /* If I undo this comment, there will be "fixed" upon "fixed",
-    and the top-bar will be displayed translated to the right
-    position: fixed;
-    top: 0; */
-
     display: flex;
     justify-content: space-between;
 

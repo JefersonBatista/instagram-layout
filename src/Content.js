@@ -1,4 +1,5 @@
 import Post from "./Post";
+import Stories from "./Stories";
 
 const posts = [
   {
@@ -44,6 +45,8 @@ const posts = [
 export default function Content() {
   return (
     <main className="content">
+      <Stories />
+
       {posts.map((post) => (
         <Post user={post.user} image={post.image} likes={post.likes} />
       ))}

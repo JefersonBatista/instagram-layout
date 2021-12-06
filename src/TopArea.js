@@ -3,7 +3,7 @@ import TopBar from "./TopBar";
 
 export default function TopArea() {
   return (
-    <header>
+    <header className="top-area">
       <TopBar />
       <MobileTopBar />
     </header>

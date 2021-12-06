@@ -30,6 +30,10 @@
         border: none;
     }
 
+    .stories-button {
+        display: none;
+    }
+
     .post {
         border-radius: 0;
     }
